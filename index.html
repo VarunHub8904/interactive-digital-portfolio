@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun K A - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+</head>
+<body>
+    <div id="canvas-container"></div>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#hero" onclick="smoothScroll('hero')">Home</a></li>
+            <li><a href="#about" onclick="smoothScroll('about')">About</a></li>
+            <li><a href="#education" onclick="smoothScroll('education')">Education</a></li>
+            <li><a href="#projects" onclick="smoothScroll('projects')">Projects</a></li>
+            <li><a href="#achievements" onclick="smoothScroll('achievements')">Achievements</a></li>
+            <li><a href="#contact" onclick="smoothScroll('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="scroll-indicator">↓</div>
+
+    <section id="hero" class="section hero">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <div>
+            <h1>VARUN K A</h1>
+            <div class="subtitle">Full-Stack Developer</div>
+            <a href="#about" class="cta-button" onclick="smoothScroll('about')">Explore My Journey</a>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Aspiring full-stack developer with a passion for designing scalable applications and integrating intelligent
+solutions. Skilled in Java, HTML, CSS, JavaScript, and MongoDB, with experience in backend development,
+API integration, and database management.Completed certifications in Machine Learning and Python
+Fundamentals, reflecting a commitment to continuous learning and growth. Motivated to apply logical
+thinking, creativity, and hands-on development skills to build impactful software solutions</p>
+                <div class="cta-button" style="display: inline-block; margin-top: 20px;">
+                    <a href="mailto:varunvarunka9@gmail.com" style="color: inherit; text-decoration: none;">Get In Touch</a>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Java</h3>
+                    <p>Backend</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Frontend</p>
+                </div>
+                <div class="skill-card">
+                    <h3>React</h3>
+                    <p>Framework</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Node.js</h3>
+                    <p>Runtime</p>
+                </div>
+                <div class="skill-card">
+                    <h3>MongoDB</h3>
+                    <p>Database</p>
+                </div>
+                <div class="skill-card">
+                    <h3>MySQL</h3>
+                    <p>Database</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Python</h3>
+                    <p>ML/AI</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Flask</h3>
+                    <p>Web Framework</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section education">
+        <div class="education-container">
+            <h2>Education Journey</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <h3>Bachelor of Engineering</h3>
+                    <div class="institution">Moodlakatte Institute of Technology, Kundapura</div>
+                    <div class="score">CGPA: 8.56</div>
+                    <p>Computer Science & Engineering (2022-2026)</p>
+                </div>
+                <div class="education-item">
+                    <h3>Class XII</h3>
+                    <div class="institution">D T M N College, Periyapatna</div>
+                    <div class="score">Percentage: 86.33%</div>
+                    <p>Completed in 2022</p>
+                </div>
+                <div class="education-item">
+                    <h3>Class X</h3>
+                    <div class="institution">D T M N School, Periyapatna</div>
+                    <div class="score">Percentage: 91.52%</div>
+                    <p>Completed in 2020</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="projects-container">
+            <h2>Featured Projects</h2>
+            
+            <div class="project-card">
+                <h3>AI-Powered Anomalous Dental Pattern Detection System</h3>
+                <div class="project-year">2024</div>
+                <ul class="project-features">
+                    <li>Developed ML model to detect and classify dental anomalies from panoramic X-rays</li>
+                    <li>Integrated Grad-CAM for explainable AI to visualize regions of interest</li>
+                    <li>Deployed as Flask web app for real-time prediction from uploaded images</li>
+                    <li>Assists dentists with AI-powered verification and analysis</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <h3>Health Stair Website</h3>
+                <div class="project-year">2024</div>
+                <ul class="project-features">
+                    <li>Designed responsive telemedicine platform for online consultations</li>
+                    <li>Implemented AI-based prescription generation system</li>
+                    <li>Built real-time chat & video call features using WebRTC</li>
+                    <li>Secure patient data encryption with HIPAA-compliant MongoDB architecture</li>
+                    <li>JWT authentication for enhanced security</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <h3>AI-Driven Placement Preparation Platform</h3>
+                <div class="project-year">2025 (Ongoing)</div>
+                <ul class="project-features">
+                    <li>Web-based platform leveraging AI/ML for personalized placement prep</li>
+                    <li>Resume analysis with intelligent feedback system</li>
+                    <li>Mock interview simulation with real-time evaluation</li>
+                    <li>Dynamic aptitude and technical test generation</li>
+                    <li>Comprehensive performance analytics and progress tracking</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="section achievements">
+        <div class="achievements-container">
+            <h2>Achievements & Certifications</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <h3>Professional Certifications</h3>
+                    <p>• Infosys: Programming Fundamentals using Python<br>
+                    • Udemy: Programming Network Applications in Java<br>
+                    • SWAYAM NPTEL: Introduction to Machine Learning<br>
+                    • HP Lite: Agile Project Management</p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Leadership & Teaching</h3>
+                    <p>• Conducted workshop on HTML & CSS for junior students<br>
+                    • Mentored peers in web development fundamentals<br>
+                    • Led technical sessions in college programming club</p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Hackathon Participation</h3>
+                    <p>• Hack2Crack National Level Hackathon (Healthcare domain)<br>
+                    • Srinathon National Level Hackathon (Education domain)<br>
+                    • Developed innovative solutions under time constraints</p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Academic Excellence</h3>
+                    <p>• Maintaining 8.56 CGPA in Computer Science Engineering<br>
+                    • Strong foundation in DSA, DBMS, Computer Networks<br>
+                    • Expertise in Machine Learning and Software Engineering</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="contact-container">
+            <h2>Let's Connect</h2>
+            <p style="margin-bottom: 50px; font-size: 1.2rem; color: #ccc;">Ready to collaborate on exciting projects? Let's build something amazing together!</p>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <a href="mailto:varunvarunka9@gmail.com">varunvarunka9@gmail.com</a>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <a href="tel:+918904826981">+91 8904826981</a>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/varun-a-4162a2265/" target="_blank">https://www.linkedin.com/in/varun-a-4162a2265/</a>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>Location</h3>
+                    <p>Periyapatna, Mysuru, Karnataka</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 50px;">
+                <a href="mailto:varunvarunka9@gmail.com" class="cta-button">Start a Conversation</a>
+            </div>
+        </div>
+    </section>
+
